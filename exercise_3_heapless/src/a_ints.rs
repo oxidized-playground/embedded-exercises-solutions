@@ -1,25 +1,39 @@
 use heapless::Vec;
 
-pub fn get_vec_of_3_items() -> Vec<u8, 3> {
-    // Make this a heapless list (Vec) of three items (1, 2 and 3).
-    let mut list = Vec::new();
-    let _ = list.push(1);
-    let _ = list.push(2);
-    let _ = list.push(3);
-    list
+/// Create a list of three items
+///
+/// Return a list with values 1, 2 and 3.
+///
+/// - [ ] Create slice of 1, 2 and 3
+/// - [ ] Convert slice to Vec
+pub fn get_vec_of_3_items() -> Vec<i8, 3> {
+    // Make this a heapless list (Vec) of three items (1, 2 and 3).)
+    Vec::from_slice(&[1, 2, 3]).unwrap()
 }
 
-pub fn convert_to_u16(number: u8) -> u16 {
-    number as u16
+/// Converts given number from integer size 8 to integer size 16
+///
+/// - [x] Convert number to i16
+pub fn convert_to_u16(number: i8) -> i16 {
+    number as i16
 }
 
-pub fn get_sum_of_items(items: &[u8]) -> u16 {
-    items.iter().map(|i| convert_to_u16(*i)).sum()
+/// Calculates sum of slice of numbers
+///
+/// Returns the sum value of the given slice of numbers.
+///
+/// - [ ] Iterate over all numbers
+/// - [ ] Convert number to i16
+/// - [ ] Calculate sum of slice
+pub fn get_sum_of_numbers(number: &[i8]) -> i16 {
+    // As heapless implements std traits, you can use use iter() to get a sum
+    // map() is required to convert the input from integer size 8 to integer size 16. Rust does not allow implicit conversion.
+    number.iter().map(|i| convert_to_u16(*i)).sum()
 }
 
 #[cfg(test)]
 mod tests {
-    use crate::a_ints::{get_sum_of_items, get_vec_of_3_items};
+    use crate::a_ints::{get_sum_of_numbers, get_vec_of_3_items};
 
     #[test]
     fn test_list_has_items() {
@@ -33,7 +47,7 @@ mod tests {
     #[test]
     fn test_sum_of_items() {
         let items = get_vec_of_3_items();
-        let result = get_sum_of_items(&items);
+        let result = get_sum_of_numbers(&items);
         assert_eq!(6, result);
     }
 }
