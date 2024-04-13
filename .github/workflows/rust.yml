@@ -14,7 +14,7 @@ jobs:
   test:
     strategy:
       matrix:
-        crate: [exercise_3_heapless, exercise_3_heapless]
+        crate: [exercise_3_heapless]
 
     runs-on: ubuntu-latest
 
