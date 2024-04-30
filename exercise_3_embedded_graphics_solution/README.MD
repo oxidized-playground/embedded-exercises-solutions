@@ -40,7 +40,8 @@ Make sure to have python installed (3.x)
 
 > **Note**
 >
-> If you are running macOS or Linux then `libuv` must also be installed for `espflash` and `cargo-espflash`; this is available via most popular package managers. If you are running Windows you can ignore this step.
+> If you are running macOS or Linux then `libuv` must also be installed for `espflash` and `cargo-espflash`; 
+> this is available via most popular package managers. If you are running Windows you can ignore this step.
 > ```
 > # macOS
 > brew install libuv
