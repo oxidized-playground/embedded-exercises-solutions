@@ -20,7 +20,7 @@ BONUS: show a piece of text on both desktop and display by implementing a seond 
 
 ![expected result](image-rename.png)
 
-# Environment setup
+# EXTRA INFO: Environment setup
 ## TTGO ESP32 prerequisites
 
 Install Rust (with rustup) if you don't have rustup installed yet, follow the instructions on the [rustup.rs](https://rustup.rs) site.
