@@ -20,7 +20,7 @@ BONUS: show a piece of text on both desktop and display by implementing a seond 
 
 ![expected result](image-rename.png)
 
-# Environment setup
+# EXTRA INFO: Environment setup
 ## TTGO ESP32 prerequisites
 
 Install Rust (with rustup) if you don't have rustup installed yet, follow the instructions on the [rustup.rs](https://rustup.rs) site.
@@ -40,7 +40,8 @@ Make sure to have python installed (3.x)
 
 > **Note**
 >
-> If you are running macOS or Linux then `libuv` must also be installed for `espflash` and `cargo-espflash`; this is available via most popular package managers. If you are running Windows you can ignore this step.
+> If you are running macOS or Linux then `libuv` must also be installed for `espflash` and `cargo-espflash`; 
+> this is available via most popular package managers. If you are running Windows you can ignore this step.
 > ```
 > # macOS
 > brew install libuv
