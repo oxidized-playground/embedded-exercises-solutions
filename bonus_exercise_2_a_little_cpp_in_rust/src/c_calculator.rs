@@ -5,13 +5,6 @@ pub struct CCalculator;
 // Also in Rust we need to use the `extern "C"` to make the functions callable from C++.
 // TODO: Define the functions in an extern "C" block to make them callable from C++.
 
-extern "C" {
-    fn c_whothis();
-    fn c_add(x: i16, y: i16) -> i16;
-    fn c_subtract(x: i32, y: i32) -> i32;
-    fn c_multiply(x: u32, y: u32) -> u32;
-}
-
 impl Calculator for CCalculator {
     fn whothis(&self) {
         unsafe {c_whothis()};

@@ -10,13 +10,6 @@
 
 // TODO: define the functions that are declared in the rust library
 
-extern "C" {
-    void rust_whothis();
-    uint16_t rust_add(uint16_t a, uint16_t b);
-    int32_t rust_subtract(int32_t a, int32_t b);
-    uint32_t rust_multiply(uint32_t a, uint32_t b);
-}
-
 RustCalculator::RustCalculator() {}
 
 void RustCalculator::whothis() {

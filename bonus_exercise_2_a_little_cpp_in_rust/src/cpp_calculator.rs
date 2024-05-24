@@ -17,37 +17,18 @@ extern "C" {
 
 impl Calculator for CppCalculator {
     fn whothis(&self) {
-        unsafe {
-            let calc = cpp_calculator_new();
-            cpp_whothis(calc);
-            cpp_calculator_delete(calc);
-        }
+        todo!();
     }
 
     fn add(&self, x: i16, y: i16) -> i16 {
-        unsafe {
-            let calc = cpp_calculator_new();
-            let result = cpp_add(calc, x, y);
-            cpp_calculator_delete(calc);
-            result
-        }
+        todo!();
     }
 
     fn subtract(&self, x: i32, y: i32) -> i32 {
-        unsafe {
-            let calc = cpp_calculator_new();
-            let result = cpp_subtract(calc, x, y);
-            cpp_calculator_delete(calc);
-            result
-        }
+        todo!();
     }
 
     fn multiply(&self, x: u32, y: u32) -> u32 {
-        unsafe {
-            let calc = cpp_calculator_new();
-            let result = cpp_multiply(calc, x, y);
-            cpp_calculator_delete(calc);
-            result
-        }
+        todo!();
     }
 }
