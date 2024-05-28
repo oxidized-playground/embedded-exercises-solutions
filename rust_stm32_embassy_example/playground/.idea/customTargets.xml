@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="b2da486c-cadc-477d-9c0b-0e1f49b5a80e" name="Cargo debug" defaultType="TOOL">
+      <configuration id="439224b4-2f35-4387-99b0-7c9dbe6d03fe" name="Cargo debug">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_Cargo build" />
+        </build>
+      </configuration>
+    </target>
+  </component>
+</project>
